@@ -25,7 +25,7 @@
                         <div class="card-body">
                             <form id="formularioTarea">
                                 <div class="input-group">
-                                    <input id="entradaTarea" type="text" class="form-control form-control-lg" placeholder="Escribe una nueva tarea..." />
+                                    <input id="entradaTarea" type="text" class="form-control form-control-lg" placeholder="Escribe una nueva tarea..." aria-label="Nueva tarea" />
                                     <button class="btn btn-info px-4">
                                         <i class="bi bi-plus-lg me-1"></i>
                                         Agregar
@@ -46,7 +46,7 @@
                             </h5>
                         </div>
                         <div class="card-body p-0">
-                            <div id="listaTareas" class="list-group">
+                            <div id="listaTareas" class="list-group" aria-live="polite">
                                 <!-- Acá se añaden tareas -->
                             </div>
 

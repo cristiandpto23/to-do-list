@@ -84,7 +84,7 @@ function mostrarTareas() {
                 <span>${tarea.texto}</span>
                 <small class="d-block text-secondary">Creada: ${tarea.fecha}</small>
             </div>
-            <button class="btn btn-sm btn-outline-danger" onclick="eliminarTarea(${tarea.id})">
+            <button class="btn btn-sm btn-outline-danger" onclick="eliminarTarea(${tarea.id})" aria-label="Eliminar tarea">
                 <i class="bi bi-trash"></i>
             </button>
         `;
