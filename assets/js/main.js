@@ -22,8 +22,16 @@ function agregarTarea() {
     const input = document.getElementById('entradaTarea');
     const texto = input.value.trim();
 
-    // validaciones
-    // required y maxlength en html. No hay necesidad de validaciones en js
+    // validación en JavaScript
+    if (!texto || texto.length === 0) {
+        alert('Por favor, escribe una tarea antes de agregar.');
+        return;
+    }
+
+    if (texto.length > 100) {
+        alert('La tarea es muy larga. Máximo 100 caracteres.');
+        return;
+    }
 
     // crear y agregar tarea
     const nuevaTarea = {
@@ -84,4 +92,3 @@ function mostrarTareas() {
         lista.appendChild(item);
     });
 }
-
