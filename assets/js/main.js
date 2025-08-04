@@ -69,12 +69,12 @@ function mostrarTareas() {
     // recorre las tareas e imprímelas en el html
     tareas.forEach((tarea) => {
         const item = document.createElement('div');
-        item.className = `list-group-item bg-dark text-light border-secondary d-flex align-items-center`;
+        item.className = `list-group-item bg-dark text-light border-light d-flex align-items-center`;
 
         item.innerHTML = `
             <div class="flex-grow-1">
                 <span>${tarea.texto}</span>
-                <small class="d-block text-muted">Creada: ${tarea.fecha}</small>
+                <small class="d-block text-secondary">Creada: ${tarea.fecha}</small>
             </div>
             <button class="btn btn-sm btn-outline-danger" onclick="eliminarTarea(${tarea.id})">
                 <i class="bi bi-trash"></i>
